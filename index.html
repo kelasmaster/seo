@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Mini App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SEO Mini App</h1>
+    <nav>
+      <ul>
+        <li><a href="#checklist">SEO Checklist</a></li>
+        <li><a href="#analyzer">Keyword Analyzer</a></li>
+        <li><a href="#scorecard">SEO Scorecard</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="checklist">
+      <h2>SEO Checklist</h2>
+      <ul>
+        <li><input type="checkbox" id="task1"><label for="task1">Add meta title and description</label></li>
+        <li><input type="checkbox" id="task2"><label for="task2">Optimize images with alt text</label></li>
+        <!-- Add more tasks -->
+      </ul>
+    </section>
+
+    <section id="analyzer">
+      <h2>Keyword Analyzer</h2>
+      <textarea placeholder="Paste your text here..."></textarea>
+      <button onclick="analyzeKeywords()">Analyze</button>
+      <div id="results"></div>
+    </section>
+
+    <section id="scorecard">
+      <h2>SEO Scorecard</h2>
+      <input type="url" placeholder="Enter URL" id="urlInput">
+      <button onclick="evaluateSEO()">Evaluate</button>
+      <div id="score"></div>
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://moz.com/learn/seo" target="_blank">Moz SEO Guide</a></li>
+        <li><a href="https://ahrefs.com/blog/" target="_blank">Ahrefs Blog</a></li>
+        <!-- Add more resources -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 SEO Mini App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
